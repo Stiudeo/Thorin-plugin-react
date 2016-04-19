@@ -3,7 +3,7 @@ const path = require('path'),
   fs = require('fs'),
   initSetup = require('./lib/setup'),
   initServer = require('./lib/webpackServer'),
-  initCompiler = require('./lib/webpackCompiler');
+  initCompiler = require('./lib/compile');
 /**
  * Created by Adrian on 08-Apr-16.
  *
@@ -15,7 +15,7 @@ module.exports = function(thorin, opt, pluginName) {
     webpackFile: 'webpack.config.js',  // the webpack.config.js file that we're gonna generate
     watch: thorin.env === 'development',
     debug: true,
-    publicBuild: '/public/js/build',
+    buildPath: '/public/js/build',
     libPath: 'public/js/lib',
     sourcePath: '/react',
     library: 'main',
