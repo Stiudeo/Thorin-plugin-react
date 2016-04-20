@@ -1,7 +1,7 @@
 {
   "name": "thorin-plugin-react",
   "author": "Stiudeo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
     "babel-core": "^6.7.6",
     "babel-loader": "^6.2.4",

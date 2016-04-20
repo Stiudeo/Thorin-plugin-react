@@ -35,7 +35,7 @@ module.exports = function(thorin, opt, pluginName) {
   }
   /* Clean the build path from any hot reload files. */
   pluginObj.init = function() {
-    let buildFiles = thorin.util.readDirectory(thorin.root + opt.publicBuild);
+    let buildFiles = thorin.util.readDirectory(thorin.root +'/' +  opt.buildPath);
     buildFiles.forEach((item) => {
       if(item.indexOf('.hot-update.') === -1) return;
       try {
