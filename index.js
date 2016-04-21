@@ -47,7 +47,7 @@ module.exports = function(thorin, opt, pluginName) {
   pluginObj.run = function(done) {
     let calls = [];
     /* IF we're in dev, enable the dev server */
-    if(opt.hotReload && !isSetup) {
+    if(opt.hotReload && !isSetup && opt.watch) {
       calls.push(initServer(thorin, opt));
     }
     /* if not, we're starting the webpack compiler */
