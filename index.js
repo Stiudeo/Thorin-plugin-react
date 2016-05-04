@@ -57,3 +57,4 @@ module.exports = function(thorin, opt, pluginName) {
 
   return pluginObj;
 };
+module.exports.publicName = 'react';
