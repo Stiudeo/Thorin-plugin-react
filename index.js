@@ -49,9 +49,10 @@ module.exports = function(thorin, opt, pluginName) {
     /* IF we're in dev, enable the dev server */
     if(opt.hotReload && !isSetup && opt.watch) {
       calls.push(initServer(thorin, opt));
+    } else {
+      /* if not, we're starting the webpack compiler */
+      calls.push(initCompiler(thorin, opt));
     }
-    /* if not, we're starting the webpack compiler */
-    calls.push(initCompiler(thorin, opt));
     thorin.util.async.series(calls, done);
   }
 
