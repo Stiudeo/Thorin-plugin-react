@@ -1,7 +1,7 @@
 {
   "name": "thorin-plugin-react",
   "author": "Stiudeo",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "dependencies": {
     "babel-core": "^6.7.6",
     "babel-loader": "^6.2.4",
@@ -16,10 +16,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Stiudeo/Thorin-plugin-react"
+    "url": "https://github.com/Thorinjs/Thorin-plugin-react"
   },
   "homepage": "http://thorinjs.com",
   "bugs": {
-    "url": "https://github.com/Stiudeo/Thorin-plugin-react/issues"
+    "url": "https://github.com/Thorinjs/Thorin-plugin-react/issues"
   }
 }
